@@ -1,0 +1,6 @@
+{
+  "name": "BG3 Mod Bridge",
+  "author": "OpenAI Codex",
+  "version": "1.0.0",
+  "description": "Allows BG3 Mod Bridge to enable and disable Vortex-owned BG3 mods through the official Vortex API."
+}
