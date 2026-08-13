@@ -1,6 +1,13 @@
 @echo off
 setlocal
 cd /d "%~dp0"
+
+if "%~1"=="" (
+    wscript.exe //nologo "%~dp0launch-hidden.vbs"
+    exit /b 0
+)
+
+rem Arguments such as --self-test intentionally keep a console for diagnostics.
 where py.exe >nul 2>nul
 if errorlevel 1 goto use_python
 py.exe -3 "%~dp0BG3ModBridge.pyw" %*
